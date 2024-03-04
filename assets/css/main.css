@@ -1,0 +1,14 @@
+.mainSwiper {
+    overflow: hidden;
+    position: relative;
+    height: 460px;
+}
+
+.mainSwiper .slide-txt {
+    font-family: 'GmarketSans';
+}
+
+.swiper-pagination-bullet {
+    background: none;
+    width: 50px;
+}

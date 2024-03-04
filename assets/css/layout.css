@@ -2,11 +2,179 @@
 @import url(/assets/css/fonts.css);
 @import url(/assets/css/common.css);
 
-.header-top {
+@keyframes joinlink {
+    50% {
+        transform: translate(-50%, -10px);
+    }
 
+    100% {
+        transform: translate(-50%, 0px);
+    }
+}
+
+.header-top {
     background-color: #f5f5f5;
 }
 
-.header-top .inner {}
+.header-top .inner {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .top-banner {
+    overflow: hidden;
+    flex: 1;
+    height: 30px;
+
+}
+
+.header-top .top-banner .swiper-slide {
+    display: flex;
+    align-items: center;
+}
+
+.header-top a {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.header-top .util {
+    display: flex;
+}
 
 .top-banner {}
+
+.header-top .util .join {
+    position: relative;
+}
+
+.header-top .util a {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .util a+a:before {
+    content: '';
+    margin: 0 17px;
+    padding: 3px 0;
+    height: 9px;
+    border-left: 1px solid #333;
+}
+
+.header-top .util .pop {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* display: none; */
+    padding: 5px 10px;
+    background: #ff7e12;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: -0.45px;
+    animation: joinlink 2.5s linear infinite;
+}
+
+.header-top .util .pop:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 8px 5px;
+    border-style: solid;
+    border-color: transparent transparent #ff7e12 transparent;
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.gnb .nav-btn {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.gnb .nav-btn [class*='line0'] {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #4b4948;
+
+}
+
+.gnb .logo {
+    width: 120px;
+    margin-left: 40px;
+}
+
+.gnb .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gnb .menu a {
+    display: flex;
+    font-size: 13.5px;
+    font-weight: bold;
+    word-break: keep-all;
+    text-align: center;
+    height: 100%;
+    line-height: 100%;
+    align-items: center;
+}
+
+.gnb .shop-group {
+    display: flex;
+    gap: 3px;
+}
+
+.gnb .shop-group>* {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gnb .shop-group>*:after {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.gnb .shop-group>*:hover {
+    border-radius: 50%;
+    background: #f5f5f5
+}
+
+.gnb .shop-group .search:after {
+    background-image: url(/assets/images/nav_search.png);
+}
+
+.gnb .shop-group .cart:after {
+    background-image: url(/assets/images/nav_cart.png);
+
+}
+
+.gnb .shop-group .user:after {
+    background-image: url(/assets/images/nav_man.png);
+}

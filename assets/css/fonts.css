@@ -1,0 +1,120 @@
+/* imports the font */
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+/*
+   ko - Spoqa Han Sans
+   font-family: 'Spoqa Han Sans'
+   font-weight: 700(bold), 400(regular), 300(light), 100(thin);
+*/
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+        url('./SpoqaHanSansBold.woff2') format('woff2'),
+        url('./SpoqaHanSansBold.woff') format('woff'),
+        url('./SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+        url('./SpoqaHanSansRegular.woff2') format('woff2'),
+        url('./SpoqaHanSansRegular.woff') format('woff'),
+        url('./SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+        url('./SpoqaHanSansLight.woff2') format('woff2'),
+        url('./SpoqaHanSansLight.woff') format('woff'),
+        url('./SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+        url('./SpoqaHanSansThin.woff2') format('woff2'),
+        url('./SpoqaHanSansThin.woff') format('woff'),
+        url('./SpoqaHanSansThin.ttf') format('truetype');
+}
+
+
+/*
+   en, num - Montserrat
+   font-family: 'Montserrat'
+*/
+@font-face {
+    font-family: 'MontserratB';
+    font-weight: 700;
+    src: local('Montserrat-Bold'),
+        url('./Montserrat-Bold.woff2') format('woff2'),
+        url('./Montserrat-Bold.woff') format('woff'),
+        url('./Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratR';
+    font-weight: 400;
+    src: local('Montserrat-Regular'),
+        url('./Montserrat-Regular.woff2') format('woff2'),
+        url('./Montserrat-Regular.woff') format('woff'),
+        url('./Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratL';
+    font-weight: 300;
+    src: local('Montserrat-Light'),
+        url('./Montserrat-Light.woff2') format('woff2'),
+        url('./Montserrat-Light.woff') format('woff'),
+        url('./Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratT';
+    font-weight: 100;
+    src: local('Montserrat-Thin'),
+        url('./Montserrat-Thin.woff2') format('woff2'),
+        url('./Montserrat-Thin.woff') format('woff'),
+        url('./Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+}
