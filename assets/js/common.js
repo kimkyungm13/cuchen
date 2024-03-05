@@ -9,12 +9,10 @@ $(function () {
     const mainSwiper = new Swiper(".mainSwiper", {
         pagination: {
             el: ".swiper-pagination",
+            type: "bullets",
             clickable: true,
             renderBullet: function (index, className) {
-                var pageIndex = index + 1;
-                var bulletText = pageIndex >= 10 ? pageIndex.toString() : '0' + pageIndex;
-                return '<span class="' + className + '">' + bulletText + '</span>';
-
+                return '<span class="' + className + '">' + ('0' + (index + 1)).slice(-2) + '</span>'; // 각 bullet을 숫자로 렌더링하고 앞에 0을 붙임
             },
         },
     });

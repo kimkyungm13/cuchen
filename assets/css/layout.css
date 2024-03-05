@@ -94,7 +94,7 @@
 .gnb {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 100px;
     justify-content: space-between;
 }
 
@@ -107,12 +107,29 @@
     height: 20px;
 }
 
+.gnb .nav-btn:hover [class*='line0'] {
+    background: #ff7e12;
+
+}
+
 .gnb .nav-btn [class*='line0'] {
     display: block;
     height: 4px;
     width: 100%;
     background: #4b4948;
+    transition: background 0.5s ease;
+}
 
+.gnb .nav-btn .line01 {
+    transition-delay: 0.3s
+}
+
+.gnb .nav-btn .line02 {
+    transition-delay: 0.5s
+}
+
+.gnb .nav-btn .line03 {
+    transition-delay: 0.7s
 }
 
 .gnb .logo {
@@ -128,7 +145,7 @@
 
 .gnb .menu a {
     display: flex;
-    font-size: 13.5px;
+    font-size: 16.5px;
     font-weight: bold;
     word-break: keep-all;
     text-align: center;
